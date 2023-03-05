@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3498db;
+    padding: 5rem 10rem;
+   
+}
+
+.container{
+    min-width: 20rem;
+    width: 70vw;    /* 70  vw se 30 left se aage jayega aur 30 right se bt margin auto dena pdega  */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.container h1{
+    font-size: 4rem;
+}
+.container .posts{
+  
+    margin-top: 5rem;
+    background: aliceblue;
+    padding: 2rem 5rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid red;
+}
+.post-id{
+    width: 4rem;
+    height: 4rem;
+    background-color: #2980b9;
+    color: aliceblue;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+}
+
+.title{
+    font-size: 2.5rem;
+    margin: 1rem 0 1rem 0;
+    text-transform: capitalize;
+}
+
+.post-info{
+    font-size: 1.7rem;
+}
+
+/* Modal  */
+
+/* Modal/popup */
+.popup{
+    width:370px;
+    background: #fff;
+    border-radius: 6px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    border: 1px solid green;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
+
+.popup p{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    color: red;
+}
+.popup button{
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px 0;
+    background: blue;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.popup button:hover{
+    background-color: red;
+   
+}
