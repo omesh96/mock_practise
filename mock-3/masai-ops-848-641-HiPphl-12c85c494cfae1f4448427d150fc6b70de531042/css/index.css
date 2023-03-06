@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar start */
+
+.nav{
+   
+    padding: 20px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+ margin: 20px 0 20px 0;
+}
+.nav a{
+    text-decoration: none;
+    font-size: 2rem;
+}
+.nav a:hover{
+    color: red;
+}
+
+/* navbar end */
+
+/* filter start */
+
+#filter{
+    width: 40%;
+    margin: auto;
+   
+}
+#filter button{
+    padding: 5px 20px 5px 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#filter button:hover{
+    background-color: red;
+}
+
+/* filter end */
+
+/* soting start  */
+
+#sort{
+  margin-left: 40px;
+   border: 1px solid red;
+}
+
+/* sorting end */
+
+/* menu-container */
+
+#menu-container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    margin-top: 15px;
+}
+.menu-card{
+    text-align: center;
+}
+.menu-card img{
+    width: 100%;
+    height: 240px;
+}
+.menu-card p{
+ margin: 10px;
+ font-style: oblique;
+}
+
+.menu-card button{
+    padding: 14px 20px;
+    background-color: teal;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.menu-card button:hover{
+    background-color: red;
+}
