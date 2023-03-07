@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        #login{
+            width: 20%;
+            margin: auto;
+            margin-top: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 40px 30px;
+        }
+        #login input{
+            width: 90%;
+            margin: 10px 20px;
+        }
+        #login input[type=submit]{
+            width: 90%;
+            padding: 10px;
+            background-color: teal;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="login">
+        <form action="" id="form">
+            <input type="email" placeholder="enter email" id="email">
+            <input type="password" placeholder="enter password" id="password">
+            <input type="submit" id="submitbtn">
+        </form>
+    </div>
+</body>
+</html>
+<script>
+
+   document.querySelector("form").addEventListener("submit",()=>{
+        submit()
+    })
+
+    let formtag=document.getElementById("form")
+
+    const submit=()=>{
+        event.preventDefault()
+        let email=formtag.email.value
+        let password=formtag.password.value
+        console.log(email,password)
+        loginbyreqres(email,password)
+    }
+
+    const loginbyreqres=async(email,password)=>{
+      
+
+// POST request using fetch()
+fetch("https://reqres.in/api/login", {
+	
+	// Adding method type
+	method: "POST",
+	
+	// Adding body or contents to send
+	body: JSON.stringify({
+		email: email,
+		password: password
+	}),
+	
+	// Adding headers to the request
+	headers: {
+		"Content-type": "application/json"
+	}
+})
+.then((res)=>{
+    return res.json()
+})
+.then((res)=>{
+    // console.log(res)
+  if(res.token){
+    navigate()
+  }
+})
+.catch((err)=>{
+    console.log(err)
+})
+    }
+
+    const navigate=()=>{
+   window.location.href="Admin.html"
+    }
+</script>

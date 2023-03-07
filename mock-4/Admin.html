@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./css/Admin.css">
+</head>
+<body>
+    <div id="nav">
+        <a href="./Admin.html">Admin</a>
+        <a href="./User.html">User</a>
+    </div>
+
+   <div id="formandtable">
+    <div id="formdiv">
+        <form action="">
+            <input type="url" placeholder="enter image url" id="url">
+            <input type="text" placeholder="emtem book name" id="name">
+            <input type="text" placeholder="enter author name" id="author">
+            <input type="text" placeholder="enter genre" id="genre">
+            <input type="number" placeholder="enter edition" id="edition">
+            <input type="text" placeholder="enter publisher name" id="publisher">
+            <input type="number" placeholder="enter price" id="price">
+            <input type="text" placeholder="enter borrowed (boolean)" id="borrowed">
+            <input type="submit">
+        </form>
+    </div>
+    <div class="popup" id="popup"></div>
+
+    <div id="table">
+ <table>
+   
+       <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Edition</th>
+            <th>Publisher</th>
+            <th>cost</th>
+            <th>Borrowed</th>
+            <th>Edit</th>
+            <th>Delete</th>
+      
+        </tr>
+       </thead>
+    <tbody>
+    <!-- append tbody data here  -->
+    </tbody>
+ </table>
+    </div>
+   </div>
+</body>
+</html>
+
+<script src="./js/Admin.js"></script>

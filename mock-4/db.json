@@ -1,0 +1,48 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "image_url": "https://m.media-amazon.com/images/I/5165He67NEL.jpg",
+      "book_name": "dubey",
+      "author": "J. K. Rowling",
+      "genre": "fiction",
+      "edition": "2021",
+      "publisher": "Bloomsbury",
+      "cost": 1299,
+      "borrowed": true
+    },
+    {
+      "image_url": "https://tpc.googlesyndication.com/simgad/10758017224770219361?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qmKJWN2nVeozLiAwDF3pV8x09uVVA",
+      "book_name": "swager",
+      "author": "222",
+      "genre": "history",
+      "edition": "222",
+      "publisher": "222",
+      "cost": 222,
+      "borrowed": false,
+      "id": 3
+    },
+    {
+      "image_url": "https://tpc.googlesyndication.com/simgad/10758017224770219361?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qmKJWN2nVeozLiAwDF3pV8x09uVVA",
+      "book_name": "omesh",
+      "author": "333",
+      "genre": "tech",
+      "edition": "333",
+      "publisher": "333",
+      "cost": 333,
+      "borrowed": true,
+      "id": 4
+    },
+    {
+      "image_url": "https://media.gettyimages.com/id/157482029/photo/stack-of-books.jpg?s=612x612&w=0&k=20&c=ZxSsWKNcVpEzrJ3_kxAUuhBCT3P_dfnmJ81JegPD8eE=",
+      "book_name": "assi ghat",
+      "author": "satywash",
+      "genre": "science",
+      "edition": "2022",
+      "publisher": "omesh",
+      "cost": 299,
+      "borrowed": "false",
+      "id": 5
+    }
+  ]
+}

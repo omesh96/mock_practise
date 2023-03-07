@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: aliceblue;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+#nav a{
+    text-decoration: none;
+    font-size: 25px;
+}
+#nav a:hover{
+    color: red;
+}
+
+#formdiv{
+    width: 20%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    
+}
+#formdiv input{
+    margin: 10px;
+    padding: 6px;
+}
+#formdiv input[type="submit"]{
+    width: 90%;
+    padding: 10px;
+    background-color: teal;
+    color: aliceblue;
+    border-radius: 10px;
+}
+#formandtable{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+   width: 100%;
+  
+}
+#table{
+    margin-top: 50px;
+    padding: 10px;
+}
+#table th, td {
+    border: 1px solid;
+  }
+  table{
+    border-collapse: collapse;
+  }
+  table td,
+table th{
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+} table tr:hover{
+    background-color: azure;
+} 
+
+table th{
+   padding: 14px;
+  
+   background-color:#0468aa;
+   color: white;
+   text-align: center;
+}
+table td{
+         
+    font-size: 20px;
+   }
+   table td img{
+    width: 80px;
+    height: 50px;
+   }
+
+
+   .popup{
+    width:370px;
+    background: #fff;
+    border-radius: 6px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    border: 1px solid green;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
