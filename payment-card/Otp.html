@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/otp.css">
+</head>
+<body>
+    <h1>Enter OTP</h1>
+    <div class="otp-field">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1" class="space">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+    </div>
+</body>
+</html>
+
+<script>
+    const inputs=document.querySelectorAll(".otp-field input");
+    inputs.forEach(inputs,index => {
+        inputs.dataset.index=index;
+        inputs.addEventListener("paste",handleOnPasteOtp)
+      inputs.addEventListener("keyup",handleOtp)
+    });
+
+    function handleOtp(e){
+     const input=e.target
+     const value=input.value
+     console.log(value)
+     input.value="";
+     input.value= value ? value[0] : "";
+
+     let fieldIndex=input.dataset.index;
+     if(value.length>0 && fieldIndex<index.length){
+        input.nextElementSibling.focus()
+     }
+
+     if(e.key==="Backspace" && fieldIndex>0){
+        input.previousElementSibling.focus()
+     }
+
+     if(fieldIndex== index.length-1){
+      submit()
+     }
+    }
+    function handleOnPasteOtp(e){
+        const data=e.clipboardData.getData("text");
+        const value=data.split("");
+        if(value.length===inputs.length){
+            inputs.forEach((input,index)=>(input.value=value[index]));
+            submit()
+        }
+    }
+
+    function submit(){
+        console.log("...submiting")
+    }
+</script>

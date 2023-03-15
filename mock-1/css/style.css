@@ -12,13 +12,12 @@ body{
 
 .container{
     min-width: 20rem;
-    width: 70vw;    /* 70  vw se 30 left se aage jayega aur 30 right se bt margin auto dena pdega  */
+     width: 70vw;   /* 70  vw se 30 left se aage jayega aur 30 right se bt margin auto dena pdega  */
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
 }
 .container h1{
     font-size: 4rem;
@@ -27,7 +26,7 @@ body{
   
     margin-top: 5rem;
     background: aliceblue;
-    padding: 2rem 5rem;
+    padding: 2rem 2rem;
     border-radius: 2rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border: 1px solid red;

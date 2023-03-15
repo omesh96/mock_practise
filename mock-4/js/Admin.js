@@ -137,9 +137,6 @@ function updatefunc(id){
     openmodal()
 
 }
-
-
-
 function openmodal(){
     //  console.log("open-modal")
       let popup=document.getElementById("popup")

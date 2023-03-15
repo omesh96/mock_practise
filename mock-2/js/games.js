@@ -196,7 +196,7 @@ function searchbydates(start_date,end_date){
 
     let findby_end_date=new Promise(async(resolve,reject)=>{
         try{
-           let res=await fetch(`https://www.balldontlie.io/api/v1/games?start_date=${end_date}&per_page=5`)
+           let res=await fetch(`https://www.balldontlie.io/api/v1/games?end_date=${end_date}&per_page=5`)
          let data = await res.json()
          console.log(data)
          dataarray.push(...data.data)

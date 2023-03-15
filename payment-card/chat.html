@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Page</title>
+    <link rel="stylesheet" type="text/css" href="./css/chat.css">
+  </head>
+  <body>
+    <h1>Payment Page</h1>
+    <form id="payment-form" method="post">
+      <label for="name">Name on Card:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="card-number">Card Number:</label>
+      <input type="text" id="card-number" name="card-number" required>
+      <label for="expiration-date">Expiration Date:</label>
+      <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" required>
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" required>
+      <button type="submit" id="pay-button">Pay Now</button>
+    </form>
+    <div id="card">
+      <div id="card-front">
+        <div id="card-logo"></div>
+        <div id="card-chip"></div>
+        <div id="card-number-display"></div>
+        <div id="card-name"></div>
+        <div id="card-expiry"></div>
+      </div>
+      <div id="card-back">
+        <div id="card-magnetic-stripe"></div>
+        <div id="card-signature"></div>
+      </div>
+    </div>
+    <script src="./js/chat.js"></script>
+  </body>
+</html>

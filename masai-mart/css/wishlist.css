@@ -1,0 +1,35 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(45deg, blueviolet,deeppink);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navbar a{
+    font-size: 22px;
+    color: aliceblue;
+    text-decoration: none;
+}
+#navbar a:first-child:hover{
+    color: red;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
+}
+#navbar a:last-child:hover{
+    color: chartreuse;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: overline;
+}
